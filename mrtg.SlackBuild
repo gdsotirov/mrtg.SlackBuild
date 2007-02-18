@@ -7,7 +7,7 @@
 . /etc/slack-package.conf
 
 NAME=mrtg
-VERSION=2.14.7
+VERSION=2.15.0
 BUILD=1
 
 cd $TMP
@@ -27,6 +27,7 @@ mkdir -p $PKG
 
 make install DESTDIR=$PKG
 
+(cd $PKG; strip_bin)
 bin_perms $PKG
 gzip_man $PKG
 create_docs $PKG $NAME-$VERSION
