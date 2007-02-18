@@ -1,11 +1,11 @@
 mrtg: MRTG (The Multi Router Traffic Grapher)
 mrtg:
-mrtg: The Multi Router Traffic Grapher (MRTG) is a tool to monitor the traffic
-mrtg: load on network-links. MRTG generates HTML pages containing graphical
-mrtg: images which provide a LIVE visual representation of this traffic. MRTG
-mrtg: is based on Perl and C and works under UNIX and Windows NT. MRTG is
-mrtg: being successfully used on many sites around the net.
-mrtg:
+mrtg: The Multi Router Traffic Grapher (MRTG) is a tool to monitor the
+mrtg: traffic load on network-links. MRTG generates HTML pages containing
+mrtg: graphical images which provide a LIVE visual representation of this
+mrtg: traffic. MRTG is based on Perl and C and works under UNIX and
+mrtg: WindowsNT. MRTG is being successfully used on many sites around the
+mrtg: net.
 mrtg:
 mrtg: Packaged by Georgi D. Sotirov <gdsotirov@dir.bg>
 mrtg:
