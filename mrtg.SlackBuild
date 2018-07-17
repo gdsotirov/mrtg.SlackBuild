@@ -19,13 +19,13 @@
 #
 # Visit SlackPack at http://sotirov-bg.net/slackpack/
 #
-# $Id: mrtg.SlackBuild,v 1.8 2013/03/24 17:49:12 gsotirov Exp $
+# $Id: mrtg.SlackBuild,v 1.9 2018/07/17 17:13:24 gsotirov Exp $
 #
 
 . ../../slack-package.conf
 
 NAME=mrtg
-VERSION=2.17.4
+VERSION=2.17.6 # checked out and prepared from https://github.com/oetiker/mrtg/commit/e9645c9d1db7973c74ae6e4953f9252197d098d1
 BUILD=${BUILD:-1}
 
 TMP=${TMP:-/tmp}
@@ -69,6 +69,7 @@ CXXFLAGS=$SLKCFLAGS \
 
 # Build & install
 make -j4 || exit 5
+make man
 make DESTDIR=$PKG install || exit 6
 rm -rf $PKG/usr/share/doc
 
